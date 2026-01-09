@@ -20,7 +20,11 @@ async function askGemini(otazka) {
   });
 
   const data = await res.json();
-  console.log(data.candidates[0].content.parts[0].text);
+  const resp = data.candidates[0].content.parts[0].text;
+  console.log(resp);
   
-  return res;
+  return resp;
+}
+async function stlacit(params) {
+    document.getElementById('answer').value = await askGemini(document.getElementById('prompt').value);
 }
