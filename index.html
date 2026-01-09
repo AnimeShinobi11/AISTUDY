@@ -8,7 +8,7 @@
     <script src ="gemini.js"></script>
       <textarea id="prompt" rows="5" cols="50"placeholder="Type your prompt here..."></textarea>
   <button id="askBtn" 
-  onclick="askGemini(document.getElementById('answer').value = document.getElementById('prompt').value)">Ask Gemini</button>
+  onclick="document.getElementById('answer').value = askGemini(document.getElementById('prompt').value)">Ask StudyAI</button>
         <textarea id="answer" rows="5" cols="50"placeholder="Type your prompt here..."></textarea>
   <pre id="output"></pre>
 

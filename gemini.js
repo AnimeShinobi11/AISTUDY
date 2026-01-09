@@ -1,7 +1,10 @@
 async function askGemini(otazka) {
-  const apiKey = "AlzaSyCwoby5OspqQ-6590pl1TEkDi41WhEp8dc"; // NOT safe in production
+  const apiKey = "AIzaSyA7tFfDlgXFpydbrxLW0sNh7C9DE6tmsJQ"; // NOT safe in production
+  
+  console.log((await fetch("https://generativelanguage.googleapis.com/v1beta/models?key=" + apiKey)).json())
+
   const url =
-    "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" +
+    "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=" +
     apiKey;
 
   const body = {
@@ -21,5 +24,3 @@ async function askGemini(otazka) {
   
   return res;
 }
-
-askGemini();
