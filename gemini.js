@@ -1,5 +1,5 @@
 async function askGemini(otazka) {
-  const apiKey = "YOUR_API_KEY"; // NOT safe in production
+  const apiKey = "AlzaSyCwoby5OspqQ-6590pl1TEkDi41WhEp8dc"; // NOT safe in production
   const url =
     "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" +
     apiKey;

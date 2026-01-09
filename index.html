@@ -5,9 +5,12 @@
   <title>Gemini Test</title>
 </head>
 <body>
-  <button id="askBtn">Ask Gemini</button>
+    <script src ="gemini.js"></script>
+      <textarea id="prompt" rows="5" cols="50"placeholder="Type your prompt here..."></textarea>
+  <button id="askBtn" 
+  onclick="askGemini(document.getElementById('answer').value = document.getElementById('prompt').value)">Ask Gemini</button>
+        <textarea id="answer" rows="5" cols="50"placeholder="Type your prompt here..."></textarea>
   <pre id="output"></pre>
 
-  <script src="app.js"></script>
 </body>
 </html>
